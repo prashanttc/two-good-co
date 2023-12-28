@@ -79,16 +79,17 @@ function twogood (){
              scrub : true
          }}
      )
-    gsap.to([" .page5-final h3" ,".page5-final p" ], {
+    gsap.to([ " .page5 .contactmenu"," .page5-final h3" ,".page5-final p"], {
          opacity:1,
          duration :1,
+         y : 20,
          stagger :0.5,
          scrollTrigger: {
-             trigger: "",
+             trigger: ".para3",
              scroller: "body",
-             start: "top -650%",
-             // markers : true,
-             end: "top -700%",
+             start: "top 0%",
+        //  markers : true,
+             end: "top -20%",
              scrub : true
          }}
      )
@@ -132,3 +133,34 @@ function section (){
        
 }
 section();
+
+
+function middleanime (){
+    gsap.to(".shop", {
+        scale : 1.1,
+         opacity:1,
+         duration:1,
+         stagger:1,
+         scrollTrigger:{
+       trigger :".page2-2 h1",
+       scroller :"body",
+       start :"top 50%",
+       end : "top 0",
+     //   markers : true,
+       scrub : true
+         }
+     })
+     gsap.to(".page4-img img", {
+         opacity:1,
+         duration:1,
+         stagger:1,
+         scrollTrigger:{
+       trigger :".page4-img",
+       scroller :"body",
+       start :"top 50%",
+       end : "top 20%",
+    //    markers : true,
+         }
+     })
+}
+middleanime ();
