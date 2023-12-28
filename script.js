@@ -79,19 +79,6 @@ function twogood (){
              scrub : true
          }}
      )
-    gsap.to(".page5 img", {
-opacity : 1,
-y : -30,
-
-         scrollTrigger: {
-             trigger: ".img img",
-             scroller: "body",
-             start: "top -900%",
-             markers : true,
-             end: "top -920%",
-             scrub : true
-         }}
-     )
 }
 twogood();
 
