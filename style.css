@@ -8,13 +8,19 @@
     src: url(./Gilroy-Medium.ttf);
 }
 *::selection {
-  display: none;
+   color: #fff;
+   background-color: #000;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+button ,a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 html , body {
     width: 100%;
