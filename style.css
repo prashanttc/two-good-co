@@ -8,8 +8,7 @@
     src: url(./Gilroy-Medium.ttf);
 }
 *::selection {
-    color: #fff;
-    background-color: #000;
+  display: none;
 }
 
 *{
