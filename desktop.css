@@ -1,5 +1,4 @@
-@media  screen and (max-width : 600px) {
-  
+@media  screen and (min-width : 600px) {
   @font-face {
     font-family: Futura;
     src: url(./Futura-Bold.ttf);
@@ -22,7 +21,7 @@
     height: 100%;
   }
   .workarea {
-    padding: 0 4vw;
+    padding: 0 2vw;
   }
   .page1 {
     width: 100%;
@@ -146,7 +145,6 @@
   .mainhead {
     font-family: futura ;
     padding: 0 3vw;
-    padding-left: 0;
     padding-top: 170px;
     font-size: 7.1vw;
     line-height: 0.9;
@@ -159,7 +157,7 @@
   .animhead1 {
     margin-left: 11vw;
     width: 70vw;
-    height: 14vw;
+    height: 15vw;
     position: relative;
     overflow: hidden;
   }
@@ -185,8 +183,8 @@
   /* -------------------------------------------video-------------------------------- */
   .video {
     width: 100%;
-    padding: 1vw 2vw;
-    padding-left: 0;
+    padding: 1vw 0vw;
+    padding-bottom: 2px;
     padding-top: 5vw;
     display: flex;
     flex-direction: column;
@@ -195,8 +193,8 @@
   .bottomtxt {
     display: flex;
     justify-content: space-between;
-    padding-top: 9vw;
-    font-size: 2.3vw;
+    padding-top: 6vw;
+    font-size: 1vw;
   }
   .bottomtxt h4 {
     font-weight: 100;
@@ -209,12 +207,13 @@
     width: 100%;
   }
   .section {
-    display: block;
+    display: flex;
     width: 100%;
+    justify-content: space-between;
     min-height: 100vh;
   }
   .section img {
-    width: 100%;
+    width: 80%;
     padding-top: 20px;
     z-index: 3;
   }
@@ -223,26 +222,30 @@
   .section3 {
     position: relative;
   }
+  .section1 img , .section3 img  , .section2 img{
+    width: 30vw;
+  }
+
   .sectionimg {
     position: absolute;
     display: flex;
     z-index: 4;
-    width: 60vw;
+    width: 25vw;
     align-items: center;
-    padding: 0 6vw;
+    padding: 0 3vw;
     justify-content: space-around;
-    height: 10vw;
+    height: 4vw;
     border-radius: 30px;
     background-color: red;
-    left: 20%;
+    left: 9%;
     top: 50%;
-    font-size: 2.4vw;
+    font-size: 1vw;
   }
   .sectionimg h4:nth-child(2) {
     font-weight: 300;
   }
   .sectionimg i:nth-child(1) {
-    font-size: 1.7vw;
+    font-size: 0.5vw;
   }
   .section1 .sectionimg {
     background-color: rgb(231, 255, 222);
@@ -257,24 +260,27 @@
   .page2-2 {
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding-top: 10vw;
+    padding-top: 4vw;
   }
   .page2-2 h1 {
-    font-size: 7vw;
+    font-size: 4.2vw;
     font-family: futura;
     line-height: 1;
-    text-align: center;
+    text-align: left;
     padding-bottom: 8vw;
   }
+  .page2-2-1 {
+    margin-left: 10vw;
+  }
   .page2-2 p {
-    font-size: 3.2vw;
-    line-height: 1.5;
-    text-align: center;
+    font-size:1.2vw;
+    line-height: 1.8;
+    text-align: left;
+    width: 75%;
   }
   .p1, .p2 {
-    padding-bottom: 6vw;
+    padding-bottom: 3vw;
   }
   .bordera {
     width: fit-content;
@@ -285,6 +291,7 @@
   .page4 a {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     text-transform: uppercase;
+    font-size:  1.2vw;
     font-weight: 100;
     text-decoration: none;
     color: #343434;
@@ -293,7 +300,6 @@
   .page3 {
     width: 100%;
     padding-top: 20vw;
-    padding-bottom: 1vw;
     border-bottom: 2px SOLID black;
   }
   .shoppingmall {
@@ -301,7 +307,7 @@
     grid-template-rows: 2fr 2fr;
     grid-template-columns: 2fr 2fr;
     row-gap: 10px;
-    column-gap: 20px;
+    column-gap: 10px;
   }
   .shop {
     opacity: 0;
@@ -310,31 +316,30 @@
   .shop img {
     width: 35vw;
     cursor: pointer;
-    padding-bottom: 3vw;
+    padding-bottom: 2vw;
   }
   .shop h2 {
-    font-size: 2.2vw;
+    font-size: 1vw;
     cursor: pointer;
     text-align: center;
-    font-weight: 300;
+    font-weight: 100;
+    color: #4b4b4b;
   }
   .shop2 img {
     padding-bottom: 0;
-    width: 34vw;
+    width: 33vw;
     margin-top: -3vw;
     margin-left: 5vw;
   }
-  .shop1 img {
-    margin-left: 3vw;
-  }
-  .shop3 img {
-    margin-left: 3vw;
-  }
-  .shop4 img {
-    margin-left: 5vw;
+  .shop1 img , .shop2 img , .shop3 img ,  .shop4 img{
+    margin-left: 6vw;
   }
   .shop .h2 {
     padding-top: 1vw;
+  }
+  .page3 .bottomtxt{
+  padding-top: 10vw;
+  padding-bottom: 10px;
   }
   /* --------------------------------------page4 --------------------------- */
   .page4 {
@@ -353,110 +358,129 @@
     text-align: center;
   }
   .page4 button {
-    width: 65%;
-    padding: 4vw;
-    border-radius: 30px;
+    width: 25%;
+    padding: 2vw;
+    border-radius: 39px;
     border: none;
     color: #fff;
-    font-size: 2vw;
+    margin-top: 5vw;
+    font-size: 1..3vw;
     font-weight: 600;
     background-color: #000;
     margin-bottom: 35px;
   }
   .page4 > p {
     font-family: sans-serif;
-    font-size: 3vw;
-    width: 50%;
-    margin-bottom: 60px;
+    font-size: 1.3vw;
+    width: 30%;
+    margin-bottom:  25vw;
     text-align: center;
   }
   .page4-img {
-    width: 100%;
+    width: 60%;
     display: flex;
-  
     align-items: center;
     gap: 20px;
     justify-content: space-between;
     margin-bottom: 30px;
   }
+.desktop-page4{
+  display: flex;
+  flex-direction: row-reverse;
+}
   .page4-img img {
-    width: 48%;
+    width: 50%;
     opacity: 0;
     transition: all ease 1s;
   }
   .page4-2 {
     display: flex;
+     width: 50%;
     flex-direction: column;
     justify-content: flex-start;
   }
   .page4-head2 {
     width: fit-content;
     font-family: futura;
-    font-size: 4vw;
+    font-size: 2vw;
     margin-bottom: 17px;
   }
   .page4-para {
-    font-size: 3.2vw;
+    font-size: 1.2vw;
+   
     color: rgb(65, 65, 65);
     line-height: 1.4;
   }
   .para1,
   .para2,
   .para3 {
-    margin-bottom: 8vw;
+    margin-bottom: 4vw;
+    width: 50%;
   }
   .emailadd {
     margin-top: 20vw;
     font-family: futura;
     line-height: 1;
+    font-size: 2vw;
     display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
   }
   /* -----------------------------footer------------------------------ */
   .page5 {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 7vw;
   }
   .page5 img {
-    height: 80px;
+    height: 150px;
   
     transition: all ease 1s;
-    margin-bottom: 40px;
+  }
+  .page5-desk {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   .page5 .contact-container {
     display: flex;
-  
-    width: 100%;
-    padding: 0;
-    padding-top: 0;
-    padding-right: 20vw;
+    width: 60%;
     font-family: sans-serif;
-    font-size: 2.6vw;
-    padding-bottom: 0;
-    margin-bottom: 50px;
+    font-size: 2.3vw;
+    padding-right: 0;
+    padding-left: 10vw;
+    margin-bottom: 70px;
   }
   .page5 .contactmenu{
     opacity: 0;
+    text-align: center;
     transition: all ease 1s;
   }
   .page5 .contactmenu h4 {
-    font-size: 3vw;
+    font-size: 1.6vw;
   }
   .page5 .contactmenu h4:nth-child(1) {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 100;
+  }
+  .page5-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 7vw;
+    align-items: center;
   }
   .page5-final h3 {
     padding-bottom: 30px;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 300;
     opacity: 0;
     transition: all ease 1s;
   }
   .page5-final p {
-    font-size: 2.8vw;
+    font-size: 1.3vw;
     line-height: 1.5;
+    width: 80%;
+    text-align: center;
     transition: all ease 1s;
     opacity: 0;
     padding-bottom: 60px;
@@ -465,13 +489,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2.5vw;
+    font-size: 1vw;
     padding-bottom: 20px;
   }
   .footer a {
     text-decoration: none;
     color: #929292;
   }
-
-
 }

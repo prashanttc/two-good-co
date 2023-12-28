@@ -58,7 +58,7 @@ timeline
 
     .to([".animhead1 h1", ".mainheadinner1 h1", ".mainheadinner2 h1"],
         {
-            y: "-100%",
+            y: "-105%",
             duration: 0.2,
             stagger: 0.2
         })
