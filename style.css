@@ -1,3 +1,17 @@
+
+@font-face {
+    font-family: Futura;
+    src: url(./Futura-Bold.ttf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Medium.ttf);
+}
+*::selection {
+    color: #fff;
+    background-color: #000;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
