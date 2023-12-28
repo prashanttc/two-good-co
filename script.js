@@ -79,6 +79,19 @@ function twogood (){
              scrub : true
          }}
      )
+    gsap.to([" .page5-final h3" ,".page5-final p" ], {
+         opacity:1,
+         duration :1,
+         stagger :0.5,
+         scrollTrigger: {
+             trigger: "",
+             scroller: "body",
+             start: "top -650%",
+             // markers : true,
+             end: "top -700%",
+             scrub : true
+         }}
+     )
 }
 twogood();
 
